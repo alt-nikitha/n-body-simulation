@@ -26,6 +26,7 @@ for i,t in enumerate(times):
     x_pos[2,i] = sim.particles[2].x
     y_pos[2,i] = sim.particles[2].y
 
+# uncomment to plot x and y positions over time
 # plt.scatter(x_pos,y_pos)
 # plt.show()
 
@@ -33,8 +34,9 @@ for i,t in enumerate(times):
 plt.plot(times, x_pos.T)
 plt.plot(times,y_pos.T, '-')
 plt.show()
-#use rebound inbuilt plots
 
-rebound.OrbitPlot(sim)
-plt.show()
+#use rebound inbuilt plots, uncomment below and comment plots above
+
+# rebound.OrbitPlot(sim)
+# plt.show()
 sim.status()
